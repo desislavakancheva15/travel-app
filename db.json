@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "982b",
+      "email": "deska11@icloud.com",
+      "password": "123456789"
+    }
+  ],
+  "destinations": [
+    {
+      "id": "7236",
+      "title": "Sofia",
+      "imageUrl": "https://media.istockphoto.com/id/1331071099/photo/beautiful-drone-shot-of-downtown-district-of-sofia-bulgaria-st-alexader-nevski-cathedral-in.jpg?s=1024x1024&w=is&k=20&c=gdXfB4RzwS4ZdG0Uxc_JH3xHZzsGM6553MGklSO4Sqg=",
+      "description": "Sofia, Bulgaria",
+      "creatorId": "982b"
+    },
+    {
+      "id": "a97b",
+      "title": "Paris",
+      "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+      "description": "The city of lights",
+      "creatorId": "982b"
+    }
+  ]
+}
