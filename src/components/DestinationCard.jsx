@@ -2,22 +2,22 @@ import { Link } from "react-router-dom";
 
 const DestinationCard = ({ destination }) => {
   return (
-    <div
-      style={{
-        border: "1px solid #ccc",
-        padding: "1rem",
-        margin: "1rem 0",
-        borderRadius: "8px",
-      }}
-    >
-      <h3>{destination.title}</h3>
-      <img
-        src={destination.imageUrl}
-        alt={destination.title}
-        style={{ width: "100%", maxWidth: "400px", height: "auto" }}
-      />
-      <p>{destination.description}</p>
-      <Link to={`/destinations/${destination.id}`}>View Details</Link>
+    <div className="card mb-4 shadow-sm" style={{ maxWidth: "600px" }}>
+      {destination.imageUrl && (
+        <img
+          src={destination.imageUrl}
+          className="card-img-top"
+          alt={destination.title}
+          style={{ height: "300px", objectFit: "cover" }}
+        />
+      )}
+      <div className="card-body">
+        <h5 className="card-title">{destination.title}</h5>
+        <p className="card-text">{destination.description}</p>
+        <Link to={`/destinations/${destination.id}`} className="btn btn-primary">
+          View Details
+        </Link>
+      </div>
     </div>
   );
 };

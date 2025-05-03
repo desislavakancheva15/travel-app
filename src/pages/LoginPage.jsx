@@ -10,6 +10,7 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const [error, setError] = useState("");
 
+  // Функция за обработка на вход на потребител с валидация и API заявка
   const handleSubmit = async (e) => {
     e.preventDefault();
 
